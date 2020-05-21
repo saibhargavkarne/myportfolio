@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+<style>
+*{
+  margin: 0; padding: 0;
+  font-family: 'Questrial', sans-serif;
+  }
+
+  .icon-bar {
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+.home{
+  min-height: 100vh;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  padding: ;
+}
+
+.home .full-screen{
+  min-height: 100vh;
+
+}
+
+.home .home-content{
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home .home-content .block{
+  flex:0 0 75%;
+  max-width: 75%;
+  padding: 34px;
+  border-left: 5px solid black;
+}
+
+.home .home-content .block h6{
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding:0;
+
+}
+
+.home .home-content .block h1{
+  color: black;
+  font-size: 70px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  padding:0;
+
+}
+
+.home .home-content .block h4{
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  padding:0;
+
+}
+
+@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fa {
+  color: #3cf;
+}
+.social-btns .btn.google:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.google .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.instagram:before {
+  background-color: #f26798;
+}
+.social-btns .btn.instagram .fa {
+  color: #f26798;
+}
+.social-btns .btn.linkedin:before {
+  background-color: #00aff0;
+}
+.social-btns .btn.linkedin .fa {
+  color: #00aff0;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.social-btns {
+  height: 90px;
+  margin: auto;
+  font-size: 0;
+  text-align: ;
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  vertical-align: middle;
+}
+
+    .cv-btn{
+     position:relative;
+      font-size: 0px;
+      top: 55px;
+      left: -60px;
+      padding-left: 55px;
+
+    }
+    .cv-btn2{
+      border-left: 5px solid black;
+      position: relative;
+      font-size: 0px;
+      top: 18px;
+      left: 200px;
+      padding-left: 55px;
+      
+    }
+
+.vl {
+  border-right:10px solid green;
+  height: 200px;
+  left: 250px;
+  top: 400px;
+}
+
+.about-me{
+  padding: 100px 16px;
+  background-color: #ffffff
+  }
+
+  .about-me .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .about-me .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 10px;
+    position: relative;
+    padding-bottom: 5px;
+  }
+
+  .about-me .section-title h1:before{
+    content: ' ';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 35%;
+    background-color: #febd01;
+    bottom: 0px;
+  }
+
+  .about-me .section-title p.small{
+    display: block;
+    font-size: 14px;
+    color: #838383;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+  }
+
+  .about-me .about-content .img{
+    flex: 0 0 33.33%;
+    max-width: 33.33%; 
+  }
+
+  .about-me .about-content .img img{
+    width: 100%;
+    display: block;
+  }
+
+
+  .about-me .about-content .text{
+    flex: 0 0 0 66.66%;
+    max-width: 66.66%;
+    padding-left: 30px;
+
+  }
+
+   .about-me .about-content .text h4{
+    font-family: 'Questrial', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #000000;
+   }
+
+   .about-me .about-content .text h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 0;
+    color: #000000;
+   }
+
+   .about-me .about-content .text h6 span{
+    color: #febd01;
+   }
+
+   .about-me .about-content .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 0 0 20px;
+   }
+   .about-me .about-content .text .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 0;
+   }
+
+    .about-me .about-content .text .info .list{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px)
+    margin-top: 10px;
+    border-bottom: 1px solid #dee3e6;
+    padding-bottom: 1px;
+    }
+
+    .skills{
+      padding: 0px 0px;
+      background-color: #ffffff;
+    }
+    .skills .skills-content{
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-right: 40px;
+    }
+    .skills .img{
+            flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+
+
+    }
+
+    .skills .img img{
+      width:100%;
+      display: block;
+    }
+
+    .skills .skills-content p{
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $838383;
+      margin: 0 0 0;
+    }
+
+    .skills .skills-content .skill-box{
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .skills .skills-content .skill-box h6{
+      font-size: 16px;
+      font-weight: 500;
+      color: #000000;
+      margin: 0 0 8px;
+    }
+      .skills .skills-content .skill-box .skill-bar{
+        height: 6px;
+        background-color: #eeeeee;
+        position: relative;
+      }
+      .skills .skills-content .skill-box .skill-bar .skill-bar-in{
+        background-color:#febd01;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+      }
+      .skills .skills-content .skill-box .skill-bar .skill-bar-in span{
+        color: #838383;
+        font-size: 16px;
+        font-weight: 400;
+        position: absolute;
+        right: 0;
+        top: -32px;
+      }
+
+  
+}
+}
+
+</style>	
+</head>
+<body>
+</div>
+	<header>
+<!-------------------NAVBAR CODE FROM HERE--------------------->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-secondary ">
+			<a href="#" class=" navbar-brand">
+            <img src="images/snowflake.png" height="28" alt="Responsive image" >
+        </a>
+  <a class="navbar-brand" href="#">Karne Saibhargav</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active px-5">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active px-5">
+        <a class="nav-link" href="">About Me</a>
+      </li>
+      <li class="nav-item active px-5">
+        <a class="nav-link" href="#">Our Services</a>
+      </li>
+      <li class="nav-item active px-5">
+        <a class="nav-link" href="#">Professional Skills</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+<!-------------------NAVBAR CODE ENDS HERE--------------------->
+
+
+
+<!-------------------START STICKY SOCIAL BAR--------------------->
+<section class="icon-bar">
+<div class="social-btns">
+  <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
+  <a class="btn twitter" href="#"><i class="fa fa-twitter"></i></a>
+  <a class="btn google" href="#"><i class="fa fa-google"></i></a>
+  <a class="btn instagram" href="#"><i class="fa fa-instagram"></i></a>
+  <a class="btn linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+</div>
+</section>
+<!-------------------START STICKY SOCIAL BAR--------------------->
+
+
+<!-------------------Start Home--------------------------->
+<section class="home">
+  <div class="container">
+    <div class="row full-screen">
+      <div class="home-content">
+        <div class="block">
+          <h6>Hello, My Name is</h6>
+          <h1>Saibhargav Karne</h1>
+          <h4>Web Developer (for now <img src="images/wink.png" height="28" alt="Responsive image">)</h4>
+          <div class="cv-btn">
+            <button type="submit" class="btn btn-primary">DOWNLOAD CV</button>
+          </div>
+          <div class="cv-btn2">
+            <button type="submit" class="btn px-5 btn-primary">Hire me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+</section>
+
+
+<!-------------------End Home----------------------------->
+
+
+
+
+
+
+
+
+
+<!------------------START ABOUT ME---------------->
+
+<section class="about-me text-capitalize">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h1>about me</h1>
+        <p class="small">INOFORMATION ABOUT ME </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="about-content">
+        <div class="row">
+          <div class="img">
+            <img src="images/profile.jpg" alt="profile pic">
+          </div>
+          <div class="text">
+            <h4>I'm Saibhargav Karne</h4>
+            <h6>A Lead <span>WEB</span> designer and <span>FRONT END</span> Developer based in <span>INDIA</span></h6>
+            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.
+            This Portfolio site is an example of my work. You can tell it's pretty good right.</p>
+       
+                  <div class="info">
+
+                    <div class="list">
+                      <label>Birthday:</label>
+                      <p>24th Nov 1999</p>
+                    </div>
+
+                    <div class="list">
+                     <label>E-Mail:</label>
+                     <p>bhargav.work@gmail.com</p>
+                    </div>
+
+                    <div class="list">
+                     <label>Age:</label>
+                     <p>21</p>
+                     </div>
+
+                    <div class="list">
+                     <label>Phone:</label>
+                     <p>9573469486</p>
+                    </div>
+
+                    <div class="list">
+                     <label>Nationality:</label>
+                     <p>Indian</p>
+                    </div>
+
+                    <div class="list">
+                     <label>Address:</label>
+                     <p> Rampally(v), Gharkesar, Hyderabad</p>
+                    </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------- START TRAVEL--------->
+<section class="travel text-capitalize">
+  <div class="container">
+    <div class="row">
+      <div class="section">
+        <h4>I love to travel</h4>
+        <hr class="w-30 ml-2 ">
+        <p>  Some of the places I've been are below</p>
+        
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/1.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/2.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/3.jpg" class="img-fluid">
+      </div>
+      
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/4.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/5.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/6.jpg" class="img-fluid">
+      </div>
+
+</div>
+    <div class="row text-center">
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/9.jpeg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/8.jpeg" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4">
+        <img src="images/7.jpg" class="img-fluid">
+      </div>
+
+
+          </div>
+      </div>
+    </div>
+  </div>
+  <hr class="w-10 ml-2 ">
+</section>
+<!--------END TRAVEL------------>
+<!----------------- END ABOUT ME------------------>
+
+
+
+<!-----------------Start Ourservices----------->
+
+
+<section class="about-me text-capitalize">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h1>OUR SERVICES</h1>
+        <p class="small">HERE ARE THE SERVICES WE OFFER </p>
+      </div>
+    <div class="container">
+
+        <div class="row  text-capitalize text-center mb-4">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+        <img class="card-img-top" src="images/uxui.png" alt="Card image">
+        <div class="card-body">
+        <h3 class="card-title">UNIQUE DESIGN</h3>
+        <h6>We get you the Best deal possible</h6>
+        <p class="card-text text-capitalize">Design is Important. Oh boy, we design the sites in ways you can't Imagine
+        </p>
+        <a href="#" class="btn btn-primary">know more</a>
+        </div>
+      </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+        <img class="card-img-top" src="images/layout.png" alt="Card image">
+        <div class="card-body">
+        <h3 class="card-title"> Different Layout</h3>
+        <p class="card-text text-capitalize">Like to try Unique Layouts?
+        We got you covered, we have a bunch of them. Click more to know more. There's always a lot to know</p>
+        <a href="#" class="btn btn-primary">know more</a>
+        </div>
+      </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+        <img class="card-img-top" src="images/attractive.png" alt="Card image">
+        <div class="card-body">
+        <h3 class="card-title">Make it Attractive</h3>
+        <p class="card-text">Attraction is the Key right, you bet we can make it better that anybody else(website). “For she had eyes and chose me.”
+         ― William Shakespeare</p>
+        <a href="#" class="btn btn-primary">know more</a>
+        </div>
+      </div>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+<hr class="w-10 ml-2 ">
+
+
+<!-------------------END OUR SERVICES----------->
+
+
+<section class="about-me text-capitalize">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h1>SKILL SET</h1>
+        <p class="small">FOLLOWING ARE MY SKILLS </p>
+      </div>
+    </div>
+  </div>
+
+
+<section class="skills">
+  <div class="container">
+    <div class="row">
+      <div class="skills-content">
+        <div class="row">
+          <p>Hello, I design and develop services for customers specializing in creating stylish, modern websites</p>
+          </div>
+          <div class="row">
+            <div class="skill-box">
+              <h6>HTML5</h6>
+              <div class="skill-bar">
+                <div class="skill-bar-in" style="width: 75%">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-box">
+              <h6>CSS</h6>
+              <div class="skill-bar">
+                <div class="skill-bar-in" style="width: 75%">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-box">
+              <h6>BootStrap</h6>
+              <div class="skill-bar">
+                <div class="skill-bar-in" style="width: 60%">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-box">
+              <h6>Adobe Photoshp</h6>
+              <div class="skill-bar">
+                <div class="skill-bar-in" style="width: 80%">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-box">
+              <h6>UI/UX</h6>
+              <div class="skill-bar">
+                <div class="skill-bar-in" style="width: 40%">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="img">
+        <img src="images/code.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+ </section> 
+</section>
+
+
+
+
+
+<!-------------------START COPYRIGHTS--------------------->
+<section>
+<footer>
+    <div class="container-fluid bg-secondary pt-1">
+    <div class="text-center text-capitalize">
+  <div class="footer-copyright text-center py-1">© 2020 Copyright@saibhargavkarne
+  </div>
+</div>
+</div>
+</footer>
+</section>
+<!-------------------END COPYRIGHTS--------------------->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
